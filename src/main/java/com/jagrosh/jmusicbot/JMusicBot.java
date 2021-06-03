@@ -95,6 +95,7 @@ public class JMusicBot
                 .setHelpWord(config.getHelp())
                 .setLinkedCacheSize(200)
                 .setGuildSettingsManager(settings)
+                .addCommands(Crystalize.getCommands(bot))
                 .addCommands(aboutCommand,
                         new PingCommand(),
                         new SettingsCmd(bot),
